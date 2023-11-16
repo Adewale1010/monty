@@ -86,7 +86,7 @@ void _free_tokens(void)
 
 void (*_get_op_func(char *opcode))(stack_t**, unsigned int)
 {
-	instruction_t op_func[] = {
+	instruction_t op_funcs[] = {
 		{"push", _monty_push},
 		{"pall", _monty_pall},
 		{"pint", _monty_pint},

@@ -94,6 +94,6 @@ void _fill_numbase_buff(unsigned int num, unsigned int base,
 		else
 			buff[idx] = rem + '0';
 		num /= base;
-		i--;
+		idx--;
 	}
 }
