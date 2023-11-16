@@ -139,7 +139,7 @@ void _monty_pint(stack_t **stack, unsigned int line_number)
 {
 	if ((*stack)->next == NULL)
 	{
-		_set_op_tok_error(_pint_error(line_numbet));
+		_set_op_tok_error(_pint_error(line_number));
 		return;
 	}
 
