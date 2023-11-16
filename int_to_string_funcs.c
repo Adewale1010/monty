@@ -1,4 +1,4 @@
-#include <stlib.h>
+#include <stdlib.h>
 
 unsigned int _abs(int);
 char *_get_int(int num);
