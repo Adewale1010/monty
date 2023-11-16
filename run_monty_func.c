@@ -139,7 +139,7 @@ int _run_monty(FILE *script_fd)
 		return (EXIT_FAILURE);
 	}
 
-	while (_getline(&line, &length, script_fd) != -1)
+	while (getline(&line, &length, script_fd) != -1)
 	{
 		line_number++;
 		_op_toks = strtow(line, DELIMS);
