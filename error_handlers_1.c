@@ -3,7 +3,7 @@
 int _f_open_error(char *filename);
 int _usage_error(void);
 int _no_int_error(unsigned int line_number);
-int _malloc_error(char *filename);
+int _malloc_error(void);
 int _unknown_op_error(char *opcode, unsigned int line_number);
 
 /**
