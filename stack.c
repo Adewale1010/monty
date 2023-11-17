@@ -15,7 +15,7 @@ int _init_stack(stack_t **stack);
  *         Otherwise - 2.
  */
 
-int _check_mode(stack_t **stack)
+int _check_mode(stack_t *stack)
 {
 	if (stack->n == STACK)
 	{

@@ -55,7 +55,7 @@ char **strtow(char *str, char *delims)
 	}
 	word_count = _get_word_count(str, delims);
 
-	if (wprd_count == 0)
+	if (word_count == 0)
 	{
 		return (NULL);
 	}
@@ -72,7 +72,7 @@ char **strtow(char *str, char *delims)
 			str = _get_next_word(str, delims);
 		}
 		words[idx] = malloc((word_length + 1) * sizeof(char));
-		if (word[idx] == NULL)
+		if (words[idx] == NULL)
 		{
 			while (idx >= 0)
 			{
