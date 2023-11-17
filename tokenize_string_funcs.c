@@ -77,7 +77,7 @@ char **strtow(char *str, char *delims)
 			while (idx >= 0)
 			{
 				idx--;
-				free(word[idx]);
+				free(words[idx]);
 			}
 			free(words);
 			return (NULL);
