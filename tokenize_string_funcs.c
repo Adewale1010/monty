@@ -85,7 +85,7 @@ char **strtow(char *str, char *delims)
 		n = 0;
 		while (n < word_length)
 		{
-			word[idx][n] = *(str + n);
+			words[idx][n] = *(str + n);
 			n++;
 		}
 		words[idx][n] = '\0';
