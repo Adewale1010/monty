@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #include "monty.h"
 #include <string.h>
 
@@ -130,7 +131,7 @@ int _run_monty(FILE *script_fd)
 {
 	stack_t *stack = NULL;
 	char *line = NULL;
-	size_t length = 0, exit_status = EXIT_SUCCESS;
+	size_t len = 0, exit_status = EXIT_SUCCESS;
 	unsigned int line_number = 0, prev_tok_length = 0;
 	void (*op_func)(stack_t**, unsigned int);
 
@@ -139,7 +140,7 @@ int _run_monty(FILE *script_fd)
 		return (EXIT_FAILURE);
 	}
 
-	while (getline(&line, &length, script_fd) != -1)
+	while (getline(&line, &len, script_fd) != -1)
 	{
 		line_number++;
 		_op_toks = strtow(line, DELIMS);
